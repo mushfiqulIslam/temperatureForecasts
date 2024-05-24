@@ -1,7 +1,7 @@
 from fastapi import APIRouter
 
 from core.config import district_information
-from core.load_locations import weather_forecasts
+from core.weather_forecasts import weather_forecasts
 
 forcast_router = APIRouter()
 

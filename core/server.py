@@ -3,7 +3,7 @@ from fastapi_utilities import repeat_at
 
 from api import router
 from core.config import config
-from core.load_locations import weather_forecasts
+from core.weather_forecasts import weather_forecasts
 
 
 def init_routers(app_: FastAPI) -> None:
