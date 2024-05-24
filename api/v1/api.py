@@ -8,7 +8,7 @@ forcast_router = APIRouter()
 
 @forcast_router.get("/get_coolest_10_districts")
 async def get_coolest_10_districts():
-    return weather_forecasts.get_coolest_10_districts()
+    return {"coolest_districts": weather_forecasts.get_coolest_10_districts()}
 
 
 

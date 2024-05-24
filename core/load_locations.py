@@ -65,5 +65,10 @@ class WeatherForecasts:
                         "average_temperature": average_temp
                     }, index=[0])
 
+    def reload_weather_forecast(self):
+        print("Reloading weather")
+        self._coolest_10_districts = pd.DataFrame()
+        self.preload_weather_forecast()
+
 
 weather_forecasts = WeatherForecasts()
